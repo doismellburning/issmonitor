@@ -37,6 +37,10 @@ image:
     resize: 320x200 # 200 arbitrary, the width is the goal
     type: RGB24
 
+font:
+  - file: "font.ttf"
+    id: fontBasic
+
 # https://github.com/m5stack/M5Stack
 
 spi:
@@ -54,6 +58,8 @@ display:
 
     lambda: |-
       it.image(0, 0, id(worldmap));
+
+      it.print(0, 100, fontBasic, "Hello world");
 
 
 binary_sensor:

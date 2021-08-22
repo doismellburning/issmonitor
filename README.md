@@ -16,3 +16,7 @@ This is by [Strebe](https://commons.wikimedia.org/wiki/User:Strebe) and licensed
 $ wget https://upload.wikimedia.org/wikipedia/commons/8/83/Equirectangular_projection_SW.jpg
 $ convert Equirectangular_projection_SW.jpg worldmap.png
 ```
+
+## Font
+
+I used [pixeldroid Console Regular](https://github.com/pixeldroid/fonts/releases/), will bundle when I've read the license
