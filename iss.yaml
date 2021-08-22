@@ -53,9 +53,6 @@ display:
     reset_pin: GPIO33
 
     lambda: |-
-      // Turn the whole display on.
-      it.fill(COLOR_ON);
-
       it.image(0, 0, id(worldmap));
 
 
