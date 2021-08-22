@@ -31,6 +31,12 @@ color:
     green: 100%
     blue: 100%
 
+image:
+  - file: "worldmap.png"
+    id: worldmap
+    resize: 320x200 # 200 arbitrary, the width is the goal
+    type: RGB24
+
 # https://github.com/m5stack/M5Stack
 
 spi:
@@ -50,11 +56,8 @@ display:
       // Turn the whole display on.
       it.fill(COLOR_ON);
 
-      // Turn a single pixel off at [50,60]
-      it.draw_pixel_at(50, 60, COLOR_OFF);
+      it.image(0, 0, id(worldmap));
 
-      // Turn off a whole display portion.
-      it.rectangle(50, 50, 30, 42, COLOR_OFF);
 
 binary_sensor:
   - platform: gpio
